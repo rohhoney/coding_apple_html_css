@@ -1,0 +1,56 @@
+.container{
+    width:400px;
+    background-color: antiquewhite;
+    padding:1%;
+    padding-top: 0.01%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h5{
+    margin: 7px;
+    margin-bottom: 1px;
+}
+.title{
+    font-size: 20px;
+}
+.email input{
+    width: 100%;
+}
+.first-name{
+    float: left;
+    width: 47%;
+    margin: 0px;
+}
+.first-name input{
+    width: 100%;
+}
+.last-name{
+    float: right;
+    width: 47%;
+    margin: 0px;
+}
+.last-name input{
+    width: 100%;
+
+}
+.message textarea{
+    width: 100%;
+    height: 200px;
+}
+
+.select{
+    width: 90%;
+    position: relative;
+}
+.select input{
+    float: left;
+}
+.select button{
+    position: absolute;
+    right:-40px;
+    top: -2px;
+    border:none;
+    background-color: gold;
+    color: white;
+    text-align: center;
+}

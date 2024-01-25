@@ -1,0 +1,41 @@
+.container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-content {
+    width: 80%;
+    height: 200px;
+    float: left;
+}
+
+.blog-img {
+    width: 20%;
+    height: 200px;
+    float: left;
+}
+
+.blog-profile {
+    width: 50px;
+    float: left;
+}
+
+.blog-name {
+
+    float: left;
+}
+
+/* 직계자식은 >, 그냥 모든 자식은 공백 */
+.navbar li{
+    display: inline-block;
+}
+
+.navbar a{
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}

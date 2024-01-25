@@ -1,0 +1,102 @@
+div{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0px;
+}
+
+.main-background{
+    width: 100%;
+    height: 500px;
+    background-image: url(../image/main.jpg), url();
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:1px;
+    
+    /* filter: brightness(150%); */
+}
+
+.main-title{
+    color:yellow;
+    font-size: 40px;
+    margin-left: 40%;
+}
+
+.main-background p{
+    color : beige;
+    width : 60%;
+    font-size: 30px;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+.main-background button{
+    padding:5px;
+    font-size: 40px;
+    background-color: yellow;
+    color : red;
+    border: solid 3px   ;
+    border-radius: 5px;
+    position: absolute;
+    left:0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    z-index: 5;
+    top: 600px;
+    /* 포지션을 쓰면 공중에 뜸, 
+    좌표이동 가능 
+    relative원래 위치 기준 
+    fixed는 화면 기준
+    absolute: 부모기준(relative 가진 부모기준)
+    */
+}
+
+.sub-box{
+    width: 80%;
+    height: 200px;
+    background-color: lightgray;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 60px;
+    border-radius: 5px;
+    max-width: 600px;
+    min-width: 200px;
+    box-sizing: border-box; 
+
+    /* content의 width이고 padding border은 포함한된. 
+    그래서 box-sizing설정을 적어야함.
+    */
+}
+
+.sub-box h5{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin:auto;
+    width: 500px;
+    font-size: 30px;
+    text-align: center;
+    top:5px;
+}
+.sub-box p{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 95%;
+    margin-top: 10%;
+    
+}
+
+/* 모든 디브에 해두면 편한 */
+
+input[type=text]{
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
