@@ -1,0 +1,52 @@
+div{
+    box-sizing: border-box;
+}
+td, th{
+    padding: 5px;
+    border-bottom: rgb(181, 223, 223) solid 1px;
+}
+thead{
+    text-align: center;
+}
+tbody{
+    text-align: left;
+}
+.container{
+    width: 800px;
+    height: 500px;
+    background-color:rgb(181, 223, 223);
+    padding:3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+    border-radius: 5px;
+    border-collapse: collapse;
+    background-color: white;
+    padding: 1%;
+}
+.table-image{
+    width:20%;
+    float: left;
+}
+.pay-box button{
+    float: right;
+    margin-top: 10px;
+    font-size: 20px;
+    width:300px;
+    height:40px;
+    background-color: darkblue; 
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.product-name{
+    margin-top: 30px;
+    line-height: 1px;
+}
+.class-feature{
+    line-height: 1px;
+}
