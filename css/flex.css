@@ -1,0 +1,43 @@
+.flex-item{
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 5px;
+}
+
+.flex-container{
+    display:flex;
+    height: 500px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.flex-nav{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height:70px;
+    background-color: salmon;
+    justify-content: space-between;
+}
+
+.flex-nav-item{
+    color: white;
+    margin: 0px;
+
+}
+
+.nav-container{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+.nav-item{
+    margin-right: 10px;
+    
+}

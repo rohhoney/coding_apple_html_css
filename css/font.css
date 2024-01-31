@@ -1,0 +1,17 @@
+@font-face{
+    font-family: '이쁜폰트';
+    src : url(../font/NanumSquareAcB.woff)
+}
+
+
+body{
+    margin: 0px;
+    /* font-weight: 800; */
+    /* font-family: '이쁜폰트'; */
+    font-family: 'Single Day', cursive;
+    
+}
+p{
+    transform: rotate(0.03deg); 
+    /* 안티앨리어싱하는 방법, 폰트가 좀더 부드럽게 보임, 약간 돌려줌 */
+}

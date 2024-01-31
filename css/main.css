@@ -100,3 +100,35 @@ input[type=text]{
     border: 1px solid black;
     border-radius: 4px;
 }
+
+.test{
+    /* width: 100vw; */
+    /* height: 50vh; */
+    /* width: 10rem;
+    height: 160px; */
+    width:20em;
+    background: grey;
+}
+
+.form{
+    background-color: antiquewhite;
+    margin: 100px;
+}
+@media screen and (max-width: 1200px) {
+    .main-title{
+        font-size: 30px;
+    }
+    .nav-item{
+        font-size: 12px;
+    }
+
+
+}
+@media screen and (max-width: 768px) {
+    
+}
+
+@media print {
+    
+}
+/* 주로쓰는 브레이크 포인트: 1200, 992 768 576 breakpoint는 4개이하로 쓰기를 추천 */
