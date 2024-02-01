@@ -121,11 +121,13 @@ body{
     height: 100%;
     overflow: hidden;
 }
+
 /* .overlay-wrap:hover{
     .overlay{
         margin-top: 50%;
     }
-} */
+} 
+*/
 
 .overlay-wrap:hover .overlay{
    
