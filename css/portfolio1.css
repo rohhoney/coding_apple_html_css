@@ -40,9 +40,7 @@ p {
     width: 100%;
     min-width: 500px;
     height: 400px;
-    margin: 0;
     background: linear-gradient(rgb(99, 153, 215), rgb(82, 96, 186));
-    padding: 0px;
     position: relative;
 }
 
@@ -63,12 +61,6 @@ p {
     bottom: 0px;
     margin: 0px;
     border: none;
-}
-
-.phone-image img {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
 }
 
 /* ///////////////////////////////////////////// */
@@ -164,6 +156,17 @@ service container */
     color: white;
 }
 
+.filter{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+
+}
+
+
+
+
+
 .main-image .text {
     margin: 100px;
 }
@@ -205,29 +208,36 @@ service container */
     margin-bottom: 15;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:768px){
+    .phone-container{
+        height:700px;
+    }
+    
     .phone-explain {
         display: block;
         width: 50%;
         height: 50%;
         margin-left: auto;
         margin-right: auto;
+        float:none;
+    }
+
+    .phone-explain h2{
+        text-align: center;
+    }
+
+
+    .phone-explain button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .phone-image {
         position: absolute;
-        height: 50%;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
+        width: 300px;
+        float: none;
+        right: 25%;
     }
-
-    .phone-image img {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-    }
-
-
 
 }
