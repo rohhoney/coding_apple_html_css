@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    position: relative;
+}
+
+.shake-button {
+    border: none;
+    background-color: skyblue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shake-button:hover {
+    animation-name: 흔들;
+    animation-duration: 1s;
+}
+
+.plus {
+    font-size: 50px;
+    text-align: center;
+}
+
+.plus:hover {
+    animation-name: 회전;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes 흔들 {
+    0% {
+        transform: rotate(-30deg);
+
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+@keyframes 회전 {
+    50% {
+        transform: rotate(-20deg);
+
+    }
+
+    100% {
+        transform: rotate(45deg) scale(2);
+
+        /* transform: scale(2); */
+    }
+}
+
+@keyframes 커져 {
+    50% {
+        transform: scale(1);
+
+    }
+
+    100% {
+        transform: scale(2);
+
+        /* transform: scale(2); */
+    }
+}
+
+.black-box {
+    margin: 0;
+    position: fixed;
+    width: 400px;
+    height: 100%;
+    background: black;
+    top: 0;
+    left: -300px;
+    color: white;
+}
+
+.black-box:hover {
+    animation-name: 오른쪽;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.black-box h2{
+    transition: all 1s;
+    text-align : end;
+}
+
+.black-box:hover h2{
+    text-align: center;
+}
+.black-box:hover p{
+    animation-name: 가자;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes 오른쪽 {
+    100% {
+        transform: translateX(300px);
+    }
+}
+
+
+
+@keyframes 가자{
+    0%{
+        transform: translateX(-100px);
+    }
+    50% {
+        transform: translateX(100px) skew(-40deg);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}

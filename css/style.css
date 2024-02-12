@@ -50,3 +50,33 @@ table{
 .class-feature{
     line-height: 1px;
 }
+
+progress {
+    -webkit-appearance: none;
+}
+
+progress::-webkit-progress-inner-element{
+    appearance:none;
+    background-color: red;
+    color: red;
+}
+progress::-webkit-progress-bar{
+    appearance:none;
+    background-color: red;
+    color: red;
+}
+progress::-webkit-progress-value{
+    appearance:none;
+    background-color: yellow;
+}
+ 
+
+/* css에 변수 쓰기 */
+:root{
+    --main-color:red;
+}
+
+.bar{
+    background-color: var(--main-color);
+    width: calc(20%-2px);
+}

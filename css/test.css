@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100%;
+}
+
+.background {
+  background-color: #2a3cb2;
+  font-size: 14px;
+}
+
+.box {
+  color: #2a3cb2;
+  font-style: 18px;
+}
+
+.main-bg h4 {
+  font-size: 16px;
+}
+.main-bg button {
+  color: red;
+}
+
+.btn-red, .btn-green {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+}
+
+.btn-green {
+  color: green;
+}
+
+.btn-red {
+  color: green;
+}
+
+.grey-box, .yellow-box, .green-box, .red-box {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.red-box {
+  background-color: red;
+}
+
+.green-box {
+  background-color: green;
+}
+
+.yellow-box {
+  background-color: yellow;
+}
+
+.grey-box {
+  background-color: grey;
+  color: red;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: -1px;
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  letter-spacing: -1px;
+  margin: 10px;
+}
+
+h4 {
+  font-size: 10px;
+  letter-spacing: -1px;
+  padding: 10px;
+}/*# sourceMappingURL=test.css.map */

@@ -1,0 +1,102 @@
+@use 'reset.scss';
+
+.box{
+    width:100%;
+}
+
+// 용도
+// 어려운단어 기억해야할 때 변수설정 가능 ex>색상 #2a3cb2;
+$mainColor : #2a3cb2;
+$mainSize: 16px;
+
+
+.background{
+    background-color: $mainColor;
+    font-size: $mainSize - 2px;
+}
+
+.box{
+    color: $mainColor;
+    font-style: $mainSize + 2px;
+}
+//nesting
+.main-bg{
+    h4{
+        font-size: 16px;
+    }
+
+    button{
+        color:red;
+    }
+    
+}
+
+//@extend문법, %는 임시 클래스
+
+
+%btn{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+}
+
+.btn-green{
+    @extend %btn;
+    color: green;
+}
+
+.btn-red{
+    @extend %btn;
+    color: green;
+}
+
+
+%basic{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.red-box{
+    @extend %basic;
+    background-color: red;
+}
+.green-box{
+    @extend %basic;
+    background-color: green;
+}
+.yellow-box{
+    @extend %basic;
+    background-color: yellow;
+}
+.grey-box{
+    @extend %basic;
+    background-color: grey;
+    color: reset.$mainColor;
+}
+
+//@mixin문법 @include
+
+
+
+@mixin 폰트스타일($x, $y, $z){
+    font-size: $x;
+    letter-spacing: $y;
+    #{ $z} : 10px;
+}
+
+
+
+h2{
+    @include 폰트스타일(40px, -1px, margin-top);
+}
+
+h3{
+    @include 폰트스타일(20px, -1px, margin);
+}
+
+h4{
+    @include 폰트스타일(10px, -1px, padding);
+}
+
+//다른파일에 있는거 가져오고 싶을 때
