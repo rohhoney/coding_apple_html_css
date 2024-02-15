@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration-color: none;
+}
+
+.container {
+  width: 100%;
+  height: 6000px;
+  max-width: 3000px;
+  padding-left: 40px;
+  padding-right: 0;
+  background-color: #eee;
+}
+
+.title {
+  margin: 20px;
+}
+
+.menu {
+  width: 40px;
+  height: 100%;
+  background-color: rgb(74, 76, 173);
+  position: fixed;
+  left: 0%;
+}
+
+.cards {
+  padding-bottom: 20px;
+}
+
+.text-color-grey {
+  color: #eee;
+}
+
+.card1-item-skyblue {
+  width: 350px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #eee;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 5px solid skyblue;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.card1-item-green {
+  width: 350px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #eee;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 5px solid lightgreen;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.card1-item-maincolor {
+  width: 350px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #eee;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 5px solid rgb(74, 76, 173);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.card1-item-orange {
+  width: 350px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #eee;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 5px solid orange;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.graph {
+  width: 65%;
+  float: left;
+  background-clip: content-box;
+}
+
+.tasks {
+  width: 35%;
+  float: left;
+  padding-top: 0;
+  background-clip: content-box;
+}
+
+.title-bar {
+  display: block;
+  width: 100%;
+  height: 60px;
+  background-color: #eee;
+  border-radius: 5px;
+  background-clip: content-box;
+  box-shadow: 1px 2px 2px 2px lightgrey;
+  padding: 5px;
+  padding-bottom: 10px;
+}
+.title-bar h3 {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 30px;
+  padding-left: 30px;
+}
+
+.bg-grey {
+  background-color: #eee;
+}
+
+.list-group-item {
+  height: 60px;
+  align-items: center;
+}/*# sourceMappingURL=admin.css.map */

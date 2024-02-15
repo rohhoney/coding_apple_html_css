@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin_page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="menu">
+            <i class="fa-solid fa-house"></i>
+            <h6>home</h6>
+            <i class="fa-solid fa-headphones"></i>
+            <h6>Services</h6>
+            <i class="fa-solid fa-flag"></i>
+            <h6>Alerts</h6>
+            <i class="fa-solid fa-chart-pie"></i>
+            <h6>States</h6>
+        </div>
+
+
+        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3 shadow-sm">
+            <a class="navbar-brand">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                        aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+            </a>
+            <ul class="nav nav-pills text-color-grey">
+                <li class="nav-item text-body-secondary">
+                    <a class="nav-link" href="#scrollspyHeading1"><i class="fa-solid fa-bell"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2"><i class="fa-solid fa-envelope"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">Minny Park</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="title">
+            <h1>Dashboard</h1>
+        </div>
+
+        <div class="cards justify-content-around">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="card1-item-skyblue">
+                        <div class="card-item-text">
+                            <h4>Earnings (매월)</h4>
+                            <p>$400,000</p>
+                        </div>
+                        <div class="card-item-icon">                            <i class="fa-solid fa-calendar fa-3x"></i></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card1-item-green">
+                        <div class="card-item-text">
+                            <h4>Earnings (매월)</h4>
+                            <p>$400,000</p>
+                        </div>
+                        <div class="card-item-icon">
+                            <i class="fa-solid fa-dollar-sign fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card1-item-maincolor">
+                        <div class="card-item-text">
+                            <h4>Tasks</h4>
+                            <p>13</p>
+                        </div>
+                        <div class="card-item-icon">
+                            <i class="fa-solid fa-list-check fa-3x">
+                               
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card1-item-orange">
+                        <div class="card-item-text">
+                            <h4>Requests</h4>
+                            <p>26</p>
+                        </div>
+                        <div class="card-item-icon">
+                            <i class="fa-solid fa-comments fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <div class="graph p-3">
+            <div class="title-bar ">
+                <h3>Earnings Overview</h3>
+            </div>
+
+            <canvas class="bg-white" id="myChart"></canvas>
+
+            <script>
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                        datasets: [{
+                            label: '# of Votes',
+                            data: [12, 19, 3, 5, 2, 3],
+                            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                            borderColor: 'rgba(255, 99, 132, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            </script>
+        </div>
+        <div class="tasks p-3">
+            <div class="title-bar">
+                <h3>Tasks</h3>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    A list item
+                    <span class="badge bg-primary rounded-pill">14</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    A second list item
+                    <span class="badge bg-primary rounded-pill">2</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    A third list item
+                    <span class="badge bg-primary rounded-pill">1</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
